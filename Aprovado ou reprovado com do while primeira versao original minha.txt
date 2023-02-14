@@ -1,0 +1,25 @@
+let continuar ='sim';
+
+do {
+student();
+
+function student() {
+    let students = [
+        name = prompt("Qual o nome do aluno?"),
+        note = prompt("Qual a nota do aluno?"),
+    ];
+    average(name,note);
+};
+
+function average(name, note){
+    if (note >= 7) {
+        return alert("Aprovado")
+    } else {
+        return alert ("Reprovado")
+    }
+};
+
+continuar = window.prompt("Digite (sim) se desejar continuar?"+"\n"+
+"Digite (não) para sair.")
+} while (continuar =='sim');
+alert("Fim da execução"+"\n"+"Obrigado pela preferência.");
